@@ -1,8 +1,8 @@
 <?php include("common/header.php"); ?>
 
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div data-loader="circle-side"></div>
-    </div><!-- /Page Preload -->
+    </div>/Page Preload -->
 
     <div class="min-vh-100 d-flex flex-column" id="main">
         
@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div id="book">
-                <form method="post" action="#" id="check_avail" autocomplete="off">
+                <form method="post">
                     <div class="row">
                         <div class="col-md-4 first-nogutter position-relative">
                             <input type="text" class=" form-control" id="dates" name="dates" placeholder="Check in / Check out">
@@ -42,7 +42,7 @@
                             </div>
                         </div>
                         <div class="col-md-1 ps-0 pe-3">
-                            <button type="submit" class="btn_check" id="submit-check">Check</button>
+                            <button class="btn_check" id="submit-check">Submit</button>
                         </div>
                     </div>
                 </form>
@@ -66,5 +66,52 @@
         </div>
     </div>
     <!-- End main -->
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      
+
+       
+
+          $("#submit-check").click(function() {
+                  
+        $name = $("#name").val();
+        var dates = $("#dates").val();
+        $quantity = $("#quantity").val();
+        
+        $dateCheckIn = dates.substring(0,8);
+        $dateCheckOut = dates.substring(13,23);
+        
+      
+            if($("#dates").val() === "" || $("#name").val() === "" || $("#quantity").val() === ""){
+                alert("Please Fill up the blank");
+            }
+          else{
+        $.ajax({
+          url: "insert_reserve.php", // Replace with your server-side script URL
+          method: "POST",
+          data: {quantity: $quantity,
+                 name: $name,
+                dateCheckIn :$dateCheckIn,
+                dateCheckOut: $dateCheckOut
+                },
+
+          success: function(response) {
+            // Display the server's response in the result div
+            $("#result").html(response);
+            console.log(response);
+          },
+          error: function() {
+            $("#result").html("An error occurred.");
+
+            console.log(formData);
+          }
+        });
+
+    }
+
+
+          });
+
+
+    </script>
 <?php include("common/footer.php"); ?>
