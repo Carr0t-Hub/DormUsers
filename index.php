@@ -26,7 +26,7 @@
                             <input type="text" class=" form-control" id="dates" name="dates" placeholder="Check in / Check out">
                             <span class="input-icon"><i class="bi bi-calendar2"></i></span>
                         </div>
-                        <div class="col-md-3 nogutter position-relative">
+                        <div class="col-md-4 nogutter position-relative">
                             <input type="text" class=" form-control" id="name" name="name" placeholder="Name">
                             <span class="input-icon"><i class="bi bi-people"></i></span>
                         </div>
@@ -40,6 +40,22 @@
                                 <input type="text" name="quantity" id="quantity" value="" class="qty form-control required" placeholder="Guest">
                                 <input type="button" value="-" class="qtyminus" name="quantity">
                             </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-4 first-nogutter position-relative">
+                            <select class="form-control" name="rooms" id="rooms" placeholder="Room">
+                                <option selected disabled>Room</option>
+                                <option value="1">Dormitory Room - Php 300.00</option>
+                                <option value="2">Partitioned Room - Php 500.00</option>
+                                <option value="3">Single Room - Php 1,500.00</option>
+                                <option value="3">Shared Room - Php 150.00</option>
+                            </select>
+                            <span class="input-icon"><i class="bi bi-building"></i></span>
+                        </div>
+                        <div class="col-md-7 nogutter position-relative">
+                            <input type="text" class="form-control" id="purpose" name="purpose" placeholder="Purpose">
+                            <span class="input-icon"><i class="bi bi-megaphone"></i></span>
                         </div>
                         <div class="col-md-1 ps-0 pe-3">
                             <button class="btn_check" id="submit-check">Submit</button>
@@ -68,50 +84,36 @@
     <!-- End main -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-      
-
-       
-
-          $("#submit-check").click(function() {
-                  
+        $("#submit-check").click(function() {
         $name = $("#name").val();
         var dates = $("#dates").val();
         $quantity = $("#quantity").val();
         
         $dateCheckIn = dates.substring(0,8);
         $dateCheckOut = dates.substring(13,23);
-        
-      
-            if($("#dates").val() === "" || $("#name").val() === "" || $("#quantity").val() === ""){
-                alert("Please Fill up the blank");
-            }
-          else{
-        $.ajax({
-          url: "insert_reserve.php", // Replace with your server-side script URL
-          method: "POST",
-          data: {quantity: $quantity,
-                 name: $name,
-                dateCheckIn :$dateCheckIn,
-                dateCheckOut: $dateCheckOut
+        if($("#dates").val() === "" || $("#name").val() === "" || $("#quantity").val() === ""){
+            alert("Please Fill up the blank");
+        }else{
+            $.ajax({
+                url: "insert_reserve.php", // Replace with your server-side script URL
+                method: "POST",
+                data: {
+                    quantity: $quantity,
+                    name: $name,
+                    dateCheckIn :$dateCheckIn,
+                    dateCheckOut: $dateCheckOut
                 },
-
-          success: function(response) {
-            // Display the server's response in the result div
-            $("#result").html(response);
-            console.log(response);
-          },
-          error: function() {
-            $("#result").html("An error occurred.");
-
-            console.log(formData);
-          }
-        });
-
-    }
-
-
-          });
-
-
-    </script>
+                success: function(response) {
+                    // Display the server's response in the result div
+                    $("#result").html(response);
+                    console.log(response);
+                },
+                error: function() {
+                    $("#result").html("An error occurred.");
+                    console.log(formData);
+                }
+            });
+        }
+    });
+</script>
 <?php include("common/footer.php"); ?>
