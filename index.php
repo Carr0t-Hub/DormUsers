@@ -54,7 +54,7 @@
             <nav class="clearfix">
                 <ul class="menu">
                     <li><a href="#" id="modal-offers-open">Offers</a></li>
-                    <!-- <li><a href="#" id="modal-notified-open">Get notified</a></li> -->
+                    <li><a href="#" id="modal-notified-open">Guidelines</a></li>
                     <li><a href="#" id="modal-contacts-open">Contacts</a></li>
                 </ul>
                 <ul id="contact_follow">

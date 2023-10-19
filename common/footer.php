@@ -21,17 +21,15 @@
                             <!-- /carousel -->
                         </div>
                         <div class="col-lg-5">
-                            <h3>Classic Single Room <span> Pellentesque amet adipiscing scelerisque</span></h3>
+                            <h3>Dormitory Rooms<span>  Php 300.00/Head</span></h3>
                             <p>
-                                Lorem ipsum dolor sit amet, pellentesque amet adipiscing scelerisque, vitae urna aenean, justo malesuada at eu, orci varius risus luctus enim a malesuada. Erat in tempor magna, eget porttitor posuere.
+                                Amenities: Air-conditioned, 8 double-decker beds, common CR with hot & cold bath, and provision of Wi-Fi.
                             </p>
                             <ul class="additional_info">
-                                <li><i class=" icon-hotel-double_bed"></i></li>
-                                <li><i class="icon-hotel-wifi"></i></li>
-                                <li><i class="icon-hotel-tv"></i></li>
-                                <li><i class="icon-hotel-shower"></i></li>
-                                <li><i class="icon-hotel-hairdryer"></i></li>
                                 <li><i class="icon-hotel-condition"></i></li>
+                                <li><i class="icon-hotel-double_bed"></i></li>
+                                <li><i class="icon-hotel-shower"></i></li>
+                                <li><i class="icon-hotel-wifi"></i></li>
                             </ul>
                             <p><a href="#" class="btn-2 modal-close-2">Book now</a></p>
                         </div>
@@ -53,17 +51,16 @@
                             <!-- /carousel -->
                         </div>
                         <div class="col-lg-5 order-lg-1">
-                            <h3>Classic Double Room <span> Pellentesque amet adipiscing scelerisque</span></h3>
+                            <h3>Partitioned Rooms <span> Php 500.00/Head</span></h3>
                             <p>
-                                Lorem ipsum dolor sit amet, pellentesque amet adipiscing scelerisque, vitae urna aenean, justo malesuada at eu, orci varius risus luctus enim a malesuada. Erat in tempor magna, eget porttitor posuere.
+                                Amenities: Air-conditioned, single bed, working table, common CR with hot & cold bath, and provision of Wi-Fi.
                             </p>
                             <ul class="additional_info">
-                                <li><i class="icon-hotel-double_bed_2"></i></li>
-                                <li><i class="icon-hotel-wifi"></i></li>
-                                <li><i class="icon-hotel-tv"></i></li>
-                                <li><i class="icon-hotel-shower"></i></li>
-                                <li><i class="icon-hotel-hairdryer"></i></li>
                                 <li><i class="icon-hotel-condition"></i></li>
+                                <li><i class="icon-hotel-single_bed"></i></li>
+                                <li><i class="icon-hotel-patio"></i></li>
+                                <li><i class="icon-hotel-shower"></i></li>
+                                <li><i class="icon-hotel-wifi"></i></li>
                             </ul>
                             <p><a href="#" class="btn-2 modal-close-2">Book now</a></p>
                         </div>
@@ -85,19 +82,49 @@
                             <!-- /carousel -->
                         </div>
                         <div class="col-lg-5">
-                            <h3>Luxury Double Room <span> Pellentesque amet adipiscing scelerisque</span></h3>
+                            <h3>Single Room <span> Php 1,500.00/Head</span></h3>
                             <p>
-                                Lorem ipsum dolor sit amet, pellentesque amet adipiscing scelerisque, vitae urna aenean, justo malesuada at eu, orci varius risus luctus enim a malesuada. Erat in tempor magna, eget porttitor posuere.
+                                Amenities: Air-conditioned, double-size beds, with TV and Refrigerator, sofa set, working table, private CR with hot & cold bath, and provision of Wi-Fi.
                             </p>
                             <ul class="additional_info">
+                                <li><i class="icon-hotel-condition"></i></li>
                                 <li><i class="icon-hotel-double_bed_2"></i></li>
-                                <li><i class="icon-hotel-wifi"></i></li>
                                 <li><i class="icon-hotel-tv"></i></li>
+                                <li><i class="icon-hotel-patio"></i></li>
                                 <li><i class="icon-hotel-bath"></i></li>
                                 <li><i class="icon-hotel-hairdryer"></i></li>
-                                <li><i class="icon-hotel-safety_box"></i></li>
                                 <li><i class="icon-hotel-loundry"></i></li>
+                                <li><i class="icon-hotel-wifi"></i></li>
+                            </ul>
+                            <p><a href="#" class="btn-2 modal-close-2">Book now</a></p>
+                        </div>
+                    </div>
+                    <!-- /row -->
+                    <div class="row d-flex align-items-center justify-content-between add_bottom_60">
+                        <div class="col-lg-6 order-lg-2">
+                            <div class="owl-carousel owl-theme carousel_item_1 mb-4">
+                                <div class="item">
+                                    <a data-fslightbox="gallery_2" data-type="image" href="img/rooms/2.jpg"><img src="img/rooms/2.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a data-fslightbox="gallery_2" data-type="image" href="img/rooms/opt_2.jpg"><img src="img/rooms/opt_2.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a data-fslightbox="gallery_2" data-type="image" href="img/rooms/opt_3.jpg"><img src="img/rooms/opt_3.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <!-- /carousel -->
+                        </div>
+                        <div class="col-lg-5 order-lg-1">
+                            <h3>Shared Room - Driver's Quarter <span> Free of Charge for BAR Drivers (based on existing policy) <br> Php 150.00 per day for Non-BAR Drivers</span></h3>
+                            <p>
+                                Amenities: Electric Fan, 3 double decks, common CR with hot & cold bath, and provision of Wi-Fi.
+                            </p>
+                            <ul class="additional_info">
                                 <li><i class="icon-hotel-condition"></i></li>
+                                <li><i class="icon-hotel-double_bed"></i></li>
+                                <li><i class="icon-hotel-shower"></i></li>
+                                <li><i class="icon-hotel-wifi"></i></li>
                             </ul>
                             <p><a href="#" class="btn-2 modal-close-2">Book now</a></p>
                         </div>
@@ -115,17 +142,62 @@
             <div class="container my-auto">
                 <div class="row justify-content-center">
                     <div class="col-md-6 text-center my-auto">
-                        <h2 class="section_title mb-4">Get Notified</h2>
-                        <p class="lead">
-                            Contact me when the site come back! <br>No worries, no spam.
-                        </p>
-                        <form method="post" action="phpmailer/newsletter_phpmailer.php" id="newsletter" name="newsletter" autocomplete="off">
-                            <div class="form-group">
-                                <input name="email_newsletter" id="email_newsletter" type="email" placeholder="Your Email" class="form-control">
-                            </div>
-                            <button id="submit-newsletter" class="btn-2">Subscribe</button>
-                        </form>
+                        <h2 class="section_title mb-4">GUIDELINES ON DORMITORY FACILITIES</h2>
+                        <!-- <p class="lead">
+                            Guidelines on the USE<br>DORMITORY FACILITIES.
+                        </p> -->
                         <div id="message-newsletter"></div>
+                    </div>
+                </div>
+                <div class="justify-content-center">
+                    <div class="row">
+                        <div class="col-sm-4 col-md-12 col-lg-12">
+                            <div class="alert alert-info">
+                                <span>
+                                    A. <b>CLIENTS</b><br>
+                                    BAR Clientele from DA Bureaus and Attached Agencies including DA Central Office, DA-Regional Field Offices, State Colleges and Universities, Local Government Units, Other Government Agencies, and Non-Government Organizations
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-12 col-lg-12">
+                            <div class="alert alert-info">
+                                <span>
+                                    B. <b>SCHEDULE OF AVAILABILITY OF SERVICE</b><br>
+                                    <em>For accommodation and payment beyond office hours you may contact:</em><br><br>
+                                    <b>Mr. Jodan Araullo</b>, Administrative Assistant V <br>
+                                    <b>0905-254-8077</b>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-12 col-lg-12">
+                            <div class="alert alert-info">
+                                <span>
+                                    C. <b>APPROVAL OF REQUEST FOR DORMITORY SERVICES</b><br>
+                                    <ol>
+                                        <li>Guest/s shall submit a request letter addressed to the Director, which shall include the list of name/s of agency staff availing the services, duration, and purpose of stay; BAR officials may endorse the letter but should not be the one to make/sign the request on behalf of the guest/s;</li>
+                                        <li>Upon receipt of request, Building Maintenance, Security and General Utility Services Unit (BMSGUSU) staff shall check the availability of requested room;</li>
+                                        <li>If available, BMSGUSU staff shall confirm details of request and secure approval from the BAR Director thru the BMSGUSU Head; and,</li>
+                                        <li>If not available, BMSGUSU Staff shall immediately notify the requesting guest.</li>
+                                    </ol>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-12 col-lg-12">
+                            <div class="alert alert-info">
+                                <span>
+                                    D. <b>ARRIVAL AND CHECK-OUT PROCEDURES</b><br>
+                                    <ol>
+                                        <li>BMSGUSU staff or guard on duty shall assist the guest/s upon arrival and require guest/s to fill-out the Registration Form and Dormitory Registry Book for payment purposes;</li>
+                                        <li>Guest/s shall present valid ID in exchange for the BAR dormitory guest ID;</li>
+                                        <li>BMSGUSU staff shall coordinate with the requesting party if there are any additional requests;</li>
+                                        <li>BMSGUSU staff shall prepare the billing statement, to be forwarded to the Cash Unit for processing;</li>
+                                        <li>The Accounting Unit shall prepare the order of payment;</li>
+                                        <li>Cash Unit shall issue an Official Receipt (OR) to the guest/s; and,</li>
+                                        <li>Dormitory services' standard check-in time is 2:00 PM and check-out time is 12:00 noon. Check-in time may be adjusted at an earlier time, subject to availability of room/s.</li>
+                                    </ol>
+                                </span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
