@@ -15,13 +15,14 @@ if ($conn->connect_error) {
 }
 
 // Retrieve data from the POST request
-// $name = $_POST["name"];
-// $email = $_POST["email"];
 $name = $_POST["name"];
+$email = $_POST["email"];
 $dateCheckIn = $_POST["dateCheckIn"];
 $dateCheckOut = $_POST["dateCheckOut"];
 $quantity = $_POST["quantity"];
-$Status = "test";
+$status = "requested";
+$roomType = $_POST["rooms"];
+$purpose = $_POST["purpose"];
 
 $dateTimein = DateTime::createFromFormat('m-d-y', $dateCheckIn);
 $dateTimeOut = DateTime::createFromFormat('m-d-y', $dateCheckOut);
@@ -36,43 +37,70 @@ $query_add = '';
 
 $ref_No = "SELECT `AUTO_INCREMENT` FROM INFORMATION_SCHEMA.TABLES
 WHERE TABLE_SCHEMA = 'pds_db'
-AND   TABLE_NAME   = 'dormreservation'";
+AND   TABLE_NAME   = 'dorm_reservation'";
 $ref_res = $conn->query($ref_No);
+$month = date("m");
+$year = date("Y");
 
 if ($ref_res->num_rows > 0) {
     // output data of each row
-    while($row = $ref_res->fetch_assoc()) {
-        $controlNo2 = "sample-". $row["AUTO_INCREMENT"];
+    while ($row = $ref_res->fetch_assoc()) {
+        $controlNo2 =  $year . "-" . $month . "-" . sprintf("%04d", $row["AUTO_INCREMENT"]);
     }
-  } else {
-  }
+} else {
+}
 
- $controlNo = $controlNo2;  
+$controlNo = $controlNo2;
 
- $sql = "INSERT INTO dormreservation (
-controlNo, 
-dateFiled,
-`name`,
-`status`,
-`dateCheckIn`,
-`dateCheckOut`
 
-)
- VALUES (
-'$controlNo', 
-'$today',
-'$name',
-'$Status',
-'$newdateCheckIn',
-'$newdateCheckOut'
-)";
+
+//  $sql = "INSERT INTO dormreservation (
+// controlNo, 
+// dateFiled,
+// `name`,
+// `status`,
+// `dateCheckIn`,
+// `dateCheckOut`
+
+// )
+//  VALUES (
+// '$controlNo', 
+// '$today',
+// '$name',
+// '$Status',
+// '$newdateCheckIn',
+// '$newdateCheckOut'
+// )";
+
+
+$sql = "INSERT INTO dorm_reservation (
+            controlNo,
+            name,
+            email,
+            dateCheckIn,
+            dateCheckOut,
+            guestQty,
+            roomType,
+            purpose,
+            status
+            )
+        VALUES (
+            '$controlNo',
+            '$name',
+            '$email',
+            '$newdateCheckIn',
+            '$newdateCheckOut',
+            '$quantity',
+            '$roomType',
+            '$purpose',
+            '$status'
+            )";
 
 
 if ($conn->query($sql) === TRUE) {
-    echo "Data inserted successfully.";
+    echo "success";
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo $conn->error;
 }
 
 $conn->close();
-?>
